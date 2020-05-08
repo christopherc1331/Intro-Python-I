@@ -10,6 +10,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # Note: pay close attention to your current directory when trying to open "foo.txt"
 
 # YOUR CODE HERE
+with open(r"C:\Users\chris\OneDrive\Documents\GitHub\Projects\Intro-Python-I\src\foo.txt", "r") as foo:
+    all_lines = foo.readlines()
+    print(all_lines)
+
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
 # writing. Write three lines of arbitrary content to that file,
@@ -17,3 +21,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+arbirtray_tuple = ("tick tock", "the clock goes", "bing boing!")
+
+with open(r"C:\Users\chris\OneDrive\Documents\GitHub\Projects\Intro-Python-I\src\bar.txt", "w") as bar:
+    for i in arbirtray_tuple:
+        bar.write(i
+        
+         + ', ')
+
+with open(r"C:\Users\chris\OneDrive\Documents\GitHub\Projects\Intro-Python-I\src\bar.txt", "r") as bar:
+    all_lines = bar.readlines()
+    print(all_lines)

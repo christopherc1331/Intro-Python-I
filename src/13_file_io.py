@@ -25,9 +25,7 @@ arbirtray_tuple = ("tick tock", "the clock goes", "bing boing!")
 
 with open(r"C:\Users\chris\OneDrive\Documents\GitHub\Projects\Intro-Python-I\src\bar.txt", "w") as bar:
     for i in arbirtray_tuple:
-        bar.write(i
-        
-         + ', ')
+        bar.write(i + ', ')
 
 with open(r"C:\Users\chris\OneDrive\Documents\GitHub\Projects\Intro-Python-I\src\bar.txt", "r") as bar:
     all_lines = bar.readlines()
